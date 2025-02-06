@@ -1,8 +1,8 @@
 ---
 title: "Summarizing Data Part 1"
 subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
-author: Jason Bryer, Ph.D., Angela Lui, Ph.D., and George Hagstrom, Ph.D.
-date: "September 11, 2024"
+author: Jason Bryer, Ph.D.
+date: "February 5, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
@@ -675,8 +675,11 @@ describeBy(legosets$US_retailPrice, group = legosets$availability, mat = TRUE, s
 For data wrangling:
 
 * `dplyr` website: https://dplyr.tidyverse.org
+
 * R for Data Science book: https://r4ds.had.co.nz/wrangle-intro.html
+
 * Wrangling penguins tutorial: https://allisonhorst.shinyapps.io/dplyr-learnr/#section-welcome
+
 * Data transformation cheat sheet: https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
 
 
