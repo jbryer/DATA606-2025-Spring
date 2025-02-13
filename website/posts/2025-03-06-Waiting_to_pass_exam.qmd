@@ -2,7 +2,7 @@
 title: "How many times do I need to take a test to randomly get all questions correct?"
 author: "Jason Bryer"
 date: 2025-03-06
-draft: false
+draft: true
 description: ""
 categories: ["Miscellaneous"]
 image: "2024-10-11-Bootstrap_vs_Standard_Error.png"
