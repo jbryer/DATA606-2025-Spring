@@ -1,8 +1,8 @@
 ---
 title: "Summarizing Data Part 2"
 subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
-author: Jason Bryer, Ph.D., Angela Lui, Ph.D., and George Hagstrom, Ph.D.
-date: "September 18, 2024"
+author: Jason Bryer, Ph.D.
+date: "November 12, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
