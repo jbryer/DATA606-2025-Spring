@@ -52,8 +52,8 @@ for(i in 1:nrow(topics)) {
 	}
 }
 
-start_day <- lubridate::floor_date(min(c(meetups$day, topics$Start)), "month")
-end_day <- lubridate::ceiling_date(max(c(meetups$day, topics$End)), "month") - 1
+start_day <- lubridate::floor_date(min(c(meetups$day, topics$Start), na.rm = TRUE), "month")
+end_day <- lubridate::ceiling_date(max(c(meetups$day, topics$End), na.rm = TRUE), "month") - 1
 ```
 
 *Note: Schedule is subject to change. Last updated `r lastModified`.*

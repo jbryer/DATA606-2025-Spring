@@ -1,0 +1,17 @@
+---
+title: "Building a portfolio with Github and Quarto"
+author: "Jason Bryer"
+date: NA
+draft: false
+description: "Slides and recording for the *Building a portfolio with Github and Quarto* meetup."
+categories: ["Meetups"]
+image: "NA-Building_a_portfolio_with_Github_and_Quarto.png"
+---
+
+
+[Click here](/slides/Portfolio_Talk.html#1) to open the slides ([PDF](/slides/Portfolio_Talk.pdf)).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bHpQqvlvBk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
