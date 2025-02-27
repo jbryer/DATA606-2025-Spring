@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jason Bryer">
+<meta name="dcterms.date" content="2025-02-26">
 
-<title>Announcements – DATA 606 Spring 2025</title>
+<title>How many times do I need to take a test to randomly get all questions correct? – DATA 606 Spring 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +22,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,37 +103,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<link href="./fullcalendar-lib/main.css" rel="stylesheet">
-<script type="text/javascript" src="./fullcalendar-lib/main.js"></script>
+<link href="../fullcalendar-lib/main.css" rel="stylesheet">
+<script type="text/javascript" src="../fullcalendar-lib/main.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -131,9 +136,12 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Announcements – DATA 606 Spring 2025">
+<meta property="og:title" content="How many times do I need to take a test to randomly get all questions correct? – DATA 606 Spring 2025">
 <meta property="og:description" content="DATA 606 - Statistics and Probability - CUNY School of Professional Studies">
+<meta property="og:image" content="https://spring2025.data606.net/posts/2025-02-26-Waiting_to_pass_exam.png">
 <meta property="og:site_name" content="DATA 606 Spring 2025">
+<meta property="og:image:height" content="720">
+<meta property="og:image:width" content="1280">
 </head>
 
 <body class="nav-sidebar docked fullcontent">
@@ -145,7 +153,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Announcements</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">How many times do I need to take a test to randomly get all questions correct?</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -159,11 +167,11 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/course_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/course_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="./course/schedule.html" title="Schedule" class="quarto-navigation-tool px-1" aria-label="Schedule"><i class="bi bi-calendar-check"></i></a>
+    <a href="../course/schedule.html" title="Schedule" class="quarto-navigation-tool px-1" aria-label="Schedule"><i class="bi bi-calendar-check"></i></a>
     <a href="https://github.com/jbryer/DATA606-2025-Spring" title="Github" class="quarto-navigation-tool px-1" aria-label="Github" target="_blank"><i class="bi bi-github"></i></a>
     <a href="https://data606spring2025.slack.com" title="Slack" class="quarto-navigation-tool px-1" aria-label="Slack" target="_blank"><i class="bi bi-slack"></i></a>
     <div class="dropdown">
@@ -199,7 +207,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Announcements</span></a>
   </div>
 </li>
@@ -214,37 +222,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course/syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course/syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course/instructors.html" class="sidebar-item-text sidebar-link">
+  <a href="../course/instructors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Instructors</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course/schedule.html" class="sidebar-item-text sidebar-link">
+  <a href="../course/schedule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course/textbooks.html" class="sidebar-item-text sidebar-link">
+  <a href="../course/textbooks.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Textbooks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course/software.html" class="sidebar-item-text sidebar-link">
+  <a href="../course/software.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course/materials.html" class="sidebar-item-text sidebar-link">
+  <a href="../course/materials.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Materials</span></a>
   </div>
 </li>
@@ -261,37 +269,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/daacs.html" class="sidebar-item-text sidebar-link">
+  <a href="../assignments/daacs.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">DAACS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/participation.html" class="sidebar-item-text sidebar-link">
+  <a href="../assignments/participation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Participation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/labs.html" class="sidebar-item-text sidebar-link">
+  <a href="../assignments/labs.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Labs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/project.html" class="sidebar-item-text sidebar-link">
+  <a href="../assignments/project.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/exams.html" class="sidebar-item-text sidebar-link">
+  <a href="../assignments/exams.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exams</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assignments/homework.html" class="sidebar-item-text sidebar-link">
+  <a href="../assignments/homework.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Homework</span></a>
   </div>
 </li>
@@ -308,61 +316,61 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter1.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1 - Intro to Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter2.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2 - Summarizing Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter3.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3 - Probability</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter4.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4 - Distributions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter5.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">5 - Foundations for Inference</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter6.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">6 - Inference for Categorical Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter7.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">7 - Inference for Numerical Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter8.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">8 - Linear Regression</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter9.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter9.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">9 - Multiple and Logistic Regression</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/bayesian.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/bayesian.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bayesian</span></a>
   </div>
 </li>
@@ -379,14 +387,29 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Announcements</h1>
-</div>
+<h1 class="title">How many times do I need to take a test to randomly get all questions correct?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Miscellaneous</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jason Bryer </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 26, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -396,243 +419,170 @@ window.Quarto = {
 </header>
 
 
-<p>Be sure to check this page regularly for updates. In addition to periodic updates about the course, slides and recordings of the weekly meetups will be posted here.</p>
+<p><a href="https://fediscience.org/@DarrinLRogers/113952951823744486">Darrin Rogers asked on Mastadon</a> what are the “number of tries it would take, guessing randomly, to get 100% on a quiz if you had unlimited retries.” Here we will outline two ways to solve this problem: using a simulation and using a combination of the binomial and geometric distributions. Let’s consider an example of a 5 question test where each question has four options, hence the probability of getting any one question correct is 1/4.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>size <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="co"># Test size (i.e. number of questions)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">/</span><span class="dv">4</span> <span class="co"># Probability of randomly getting correct answer</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can use the <code>sample</code> function to simulate on test attempt.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>), <span class="at">size =</span> size, <span class="at">prob =</span> <span class="fu">c</span>(p, <span class="dv">1</span> <span class="sc">-</span> p), <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  TRUE FALSE FALSE FALSE FALSE</code></pre>
+</div>
+</div>
+<p>Next, let’s write a function that will simulate repeatedly take a test until all the questions are correct. I have added an additional parameter <code>stop_score</code> which specifies the mean score on the test before stopping. This will allow us to modify the question to answer how many tests do I need to take to pass. For now, <code>stop_score = 1</code> will continue until all questions are correct.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Simulate how long until a specified number of responses are correct</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param size test size.</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param prob probability of randomly getting correct answer</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param stop_score the score on the test we wish to achieve. Value of 1</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#'        indicates a perfect score.</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>simulate_test <span class="ot">&lt;-</span> <span class="cf">function</span>(size, p, <span class="at">stop_score =</span> <span class="dv">1</span>) {</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    n <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">repeat</span>{</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        n <span class="ot">&lt;-</span> n <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        test <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>),</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                       <span class="at">size =</span> size,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                       <span class="at">prob =</span> <span class="fu">c</span>(p, <span class="dv">1</span> <span class="sc">-</span> p),</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>                       <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(<span class="fu">mean</span>(test) <span class="sc">&gt;=</span> stop_score) {</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(n)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can run one test to see how long we need to wait until all questions on the test were answered correctly.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>(num_tests <span class="ot">&lt;-</span> <span class="fu">simulate_test</span>(<span class="at">size =</span> size, <span class="at">p =</span> p))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 158</code></pre>
+</div>
+</div>
+<p>For this one simulation, it took 158 to randomly get all the questions correct. Let’s now run this simulation 1,000 times.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>simulations <span class="ot">&lt;-</span> <span class="fu">integer</span>(<span class="dv">1000</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(simulations)) {</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    simulations[i] <span class="ot">&lt;-</span> <span class="fu">simulate_test</span>(<span class="at">size =</span> size, <span class="at">p =</span> p)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(simulations)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 977.858</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(simulations)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 687</code></pre>
+</div>
+</div>
+<p>For this simulation the average “wait time” until all questions were answered correctly is 977.858. Since the distribution is not symmetrical it may be more appropriate to use the median. Here, 50% of the simulations returned a perfect score in fewer than 687 attempts.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> simulations), <span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y =</span> ..density..), <span class="at">bins =</span> <span class="dv">50</span>, <span class="at">fill =</span> <span class="st">'grey70'</span>) <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">'blue'</span>) <span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">'Distribution of simulation results'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="2025-02-26-Waiting_to_pass_exam_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Let’s return to a single test attempt. We can use the binomial distribution to calculate the probability of getting <em>k</em> questions correct on this 5 question test.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>dist <span class="ot">&lt;-</span> <span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span>size, <span class="at">size =</span> size, <span class="at">prob =</span> p)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span>size,                          </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">prob =</span> dist,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> dist, <span class="at">digits =</span> <span class="dv">2</span>), <span class="st">'%'</span>)),</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> prob, <span class="at">label =</span> label)) <span class="sc">+</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">'identity'</span>, <span class="at">fill =</span> <span class="st">'grey50'</span>) <span class="sc">+</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text</span>(<span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="2025-02-26-Waiting_to_pass_exam_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The probability of getting all 5 questions on this test is 0.0009766. We can now treat each test attempt as a <a href="https://en.wikipedia.org/wiki/Bernoulli_trial">Bernoulli trial</a> where the probability of success is 0.0009766. The <a href="https://en.wikipedia.org/wiki/Geometric_distribution">geometric distribution</a> gives us the number of Bernoulli trials we need to get one success. The mean for the geometric distribution are:</p>
+<p><span class="math display">\[ \mu = \frac{1}{p} \]</span></p>
+<p>Therefore, it will take an average of 1024 test attempts before getting all questions correct on the attempt.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>(p_all_correct <span class="ot">&lt;-</span> <span class="fu">dbinom</span>(<span class="at">x =</span> size, <span class="at">size =</span> size, <span class="at">prob =</span> p))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0009765625</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">/</span> p_all_correct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1024</code></pre>
+</div>
+</div>
+<p>However, the geometric distribution is not symmetrical so using the mean not be desirable. Here is the geometric distribution for where the probability of success is 0.0009766.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>geom_dist <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">5000</span>,</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                        <span class="at">y =</span> <span class="fu">dgeom</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">5000</span>, <span class="at">prob =</span> <span class="fu">dbinom</span>(<span class="at">x =</span> size, <span class="at">size =</span> size, <span class="at">prob =</span> p)))</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>cut_point50 <span class="ot">&lt;-</span> <span class="fu">qgeom</span>(<span class="fl">0.50</span>, <span class="at">prob =</span> <span class="fu">dbinom</span>(<span class="at">x =</span> size, <span class="at">size =</span> size, <span class="at">prob =</span> p))</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>cut_point95 <span class="ot">&lt;-</span> <span class="fu">qgeom</span>(<span class="fl">0.95</span>, <span class="at">prob =</span> <span class="fu">dbinom</span>(<span class="at">x =</span> size, <span class="at">size =</span> size, <span class="at">prob =</span> p))</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(geom_dist, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_polygon</span>(<span class="at">data =</span> <span class="fu">rbind</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> <span class="dv">0</span>),</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>                              geom_dist[geom_dist<span class="sc">$</span>x <span class="sc">&lt;</span> cut_point95,],</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">data.frame</span>(<span class="at">x =</span> cut_point95, <span class="at">y =</span> <span class="dv">0</span>)),</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>                 <span class="at">fill =</span> <span class="st">'grey70'</span>) <span class="sc">+</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_polygon</span>(<span class="at">data =</span> <span class="fu">rbind</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> <span class="dv">0</span>),</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>                              geom_dist[geom_dist<span class="sc">$</span>x <span class="sc">&lt;</span> cut_point50,],</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">data.frame</span>(<span class="at">x =</span> cut_point50, <span class="at">y =</span> <span class="dv">0</span>)),</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>                 <span class="at">fill =</span> <span class="st">'grey50'</span>) <span class="sc">+</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_path</span>(<span class="at">stat =</span> <span class="st">'identity'</span>, <span class="at">color =</span> <span class="st">'blue'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="2025-02-26-Waiting_to_pass_exam_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The shaded area corresponds to 50% of the area. That is, if we conduct 709 tests we are 50% likely to get a test with all the answers correct. Want to be 95% sure to get a test with all answers correct, then administer 3066 tests.</p>
+<p>We can tweak the question slightly: What is the average number of tests I would have to take before passing if the answers are randomly selected? For this example, I am considering getting 4 or 5 questions correct passing. We can get the probability of getting 4 or 5 questions correct from the binomial distribution, which is 0.015625.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>p_pass <span class="ot">&lt;-</span> <span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">4</span><span class="sc">:</span><span class="dv">5</span>, <span class="at">size =</span> size, <span class="at">prob =</span> p) <span class="sc">|&gt;</span> <span class="fu">sum</span>()</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">/</span> p_pass</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 64</code></pre>
+</div>
+</div>
+<p>To just pass, we have to wait much less. We can also calculate this using the <code>simulate_test</code> function defined above.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>simulations2 <span class="ot">&lt;-</span> <span class="fu">integer</span>(<span class="dv">1000</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(simulations2)) {</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    simulations2[i] <span class="ot">&lt;-</span> <span class="fu">simulate_test</span>(<span class="at">size =</span> size, <span class="at">p =</span> p, <span class="at">stop_score =</span> <span class="fl">0.8</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(simulations2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 62.291</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(simulations2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 44</code></pre>
+</div>
+</div>
+<p>Or using the geometric distribution:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qgeom</span>(<span class="fl">0.50</span>, <span class="at">prob =</span> p_pass)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 44</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qgeom</span>(<span class="fl">0.95</span>, <span class="at">prob =</span> p_pass)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 190</code></pre>
+</div>
+</div>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Miscellaneous" data-listing-date-sort="1740546000000" data-listing-file-modified-sort="1740621799253" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="933">
-<div class="thumbnail">
-<p><a href="./posts/2025-02-26-Waiting_to_pass_exam.html" class="no-external"></a></p><a href="./posts/2025-02-26-Waiting_to_pass_exam.html" class="no-external">
-<p><img loading="lazy" src="./posts/2025-02-26-Waiting_to_pass_exam.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2025-02-26-Waiting_to_pass_exam.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-02-26-Waiting_to_pass_exam.html" class="no-external">How many times do I need to take a test to randomly get all questions correct?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-02-26-Waiting_to_pass_exam.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-02-26-Waiting_to_pass_exam.html" class="no-external">Darrin Rogers asked on Mastadon what are the “number of tries it would take, guessing randomly, to get 100% on a quiz if you had unlimited retries.” Here we will outline two…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-02-26-Waiting_to_pass_exam.html" class="no-external">
-<div class="listing-date">
-Feb 26, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Meetups" data-listing-date-sort="1740546000000" data-listing-file-modified-sort="1740664620659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
-<div class="thumbnail">
-<p><a href="./posts/2025-02-26-Distributions.html" class="no-external"></a></p><a href="./posts/2025-02-26-Distributions.html" class="no-external">
-<p><img loading="lazy" src="./posts/2025-02-26-Distributions.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2025-02-26-Distributions.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-02-26-Distributions.html" class="no-external">Distributions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-02-26-Distributions.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-02-26-Distributions.html" class="no-external">Slides and recording for the <em>Distributions</em> meetup.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-02-26-Distributions.html" class="no-external">
-<div class="listing-date">
-Feb 26, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Meetups" data-listing-date-sort="1739941200000" data-listing-file-modified-sort="1740664620430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
-<div class="thumbnail">
-<p><a href="./posts/2025-02-19-Building_a_portfolio_with_Github_and_Quarto.html" class="no-external"></a></p><a href="./posts/2025-02-19-Building_a_portfolio_with_Github_and_Quarto.html" class="no-external">
-<p><img loading="lazy" src="./posts/2025-02-19-Building_a_portfolio_with_Github_and_Quarto.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2025-02-19-Building_a_portfolio_with_Github_and_Quarto.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-02-19-Building_a_portfolio_with_Github_and_Quarto.html" class="no-external">Building a portfolio with Github and Quarto</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-02-19-Building_a_portfolio_with_Github_and_Quarto.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-02-19-Building_a_portfolio_with_Github_and_Quarto.html" class="no-external">Slides and recording for the <em>Building a portfolio with Github and Quarto</em> meetup.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-02-19-Building_a_portfolio_with_Github_and_Quarto.html" class="no-external">
-<div class="listing-date">
-Feb 19, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Meetups" data-listing-date-sort="1739941200000" data-listing-file-modified-sort="1740664620549" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
-<div class="thumbnail">
-<p><a href="./posts/2025-02-19-Probability.html" class="no-external"></a></p><a href="./posts/2025-02-19-Probability.html" class="no-external">
-<p><img loading="lazy" src="./posts/2025-02-19-Probability.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2025-02-19-Probability.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-02-19-Probability.html" class="no-external">Probability</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-02-19-Probability.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-02-19-Probability.html" class="no-external">Slides and recording for the <em>Probability</em> meetup.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-02-19-Probability.html" class="no-external">
-<div class="listing-date">
-Feb 19, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Meetups" data-listing-date-sort="1739336400000" data-listing-file-modified-sort="1740664620171" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
-<div class="thumbnail">
-<p><a href="./posts/2025-02-12-Summarizing_Data_Part_2.html" class="no-external"></a></p><a href="./posts/2025-02-12-Summarizing_Data_Part_2.html" class="no-external">
-<p><img loading="lazy" src="./posts/2025-02-12-Summarizing_Data_Part_2.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2025-02-12-Summarizing_Data_Part_2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-02-12-Summarizing_Data_Part_2.html" class="no-external">Summarizing Data Part 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-02-12-Summarizing_Data_Part_2.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-02-12-Summarizing_Data_Part_2.html" class="no-external">Slides and recording for the <em>Summarizing Data Part 2</em> meetup.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-02-12-Summarizing_Data_Part_2.html" class="no-external">
-<div class="listing-date">
-Feb 12, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Meetups" data-listing-date-sort="1738731600000" data-listing-file-modified-sort="1740664620029" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
-<div class="thumbnail">
-<p><a href="./posts/2025-02-05-Summarizing_Data_Part_1.html" class="no-external"></a></p><a href="./posts/2025-02-05-Summarizing_Data_Part_1.html" class="no-external">
-<p><img loading="lazy" src="./posts/2025-02-05-Summarizing_Data_Part_1.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2025-02-05-Summarizing_Data_Part_1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-02-05-Summarizing_Data_Part_1.html" class="no-external">Summarizing Data Part 1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-02-05-Summarizing_Data_Part_1.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-02-05-Summarizing_Data_Part_1.html" class="no-external">Slides and recording for the <em>Summarizing Data Part 1</em> meetup.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-02-05-Summarizing_Data_Part_1.html" class="no-external">
-<div class="listing-date">
-Feb 5, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="Meetups" data-listing-date-sort="1738126800000" data-listing-file-modified-sort="1740664619895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
-<div class="thumbnail">
-<p><a href="./posts/2025-01-29-Intro_to_Data.html" class="no-external"></a></p><a href="./posts/2025-01-29-Intro_to_Data.html" class="no-external">
-<p><img loading="lazy" src="./posts/2025-01-29-Intro_to_Data.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2025-01-29-Intro_to_Data.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-01-29-Intro_to_Data.html" class="no-external">Intro to Data</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-01-29-Intro_to_Data.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-01-29-Intro_to_Data.html" class="no-external">Slides and recording for the <em>Intro to Data</em> meetup.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-01-29-Intro_to_Data.html" class="no-external">
-<div class="listing-date">
-Jan 29, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="Meetups" data-listing-date-sort="1737608400000" data-listing-file-modified-sort="1740664619764" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
-<div class="thumbnail">
-<p><a href="./posts/2025-01-23-Intro_to_the_Course.html" class="no-external"></a></p><a href="./posts/2025-01-23-Intro_to_the_Course.html" class="no-external">
-<p><img loading="lazy" src="./posts/2025-01-23-Intro_to_the_Course.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2025-01-23-Intro_to_the_Course.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-01-23-Intro_to_the_Course.html" class="no-external">Intro to the Course</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-01-23-Intro_to_the_Course.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-01-23-Intro_to_the_Course.html" class="no-external">Slides and recording for the <em>Intro to the Course</em> meetup.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-01-23-Intro_to_the_Course.html" class="no-external">
-<div class="listing-date">
-Jan 23, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1719633600000" data-listing-file-modified-sort="1737591175838" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="280">
-<div class="thumbnail">
-<p><a href="./posts/2024-08-28-Welcome.html" class="no-external"></a></p><a href="./posts/2024-08-28-Welcome.html" class="no-external">
-<p><img loading="lazy" src="./posts/welcome.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2024-08-28-Welcome.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2024-08-28-Welcome.html" class="no-external">Welcome to DATA606!</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2024-08-28-Welcome.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/2024-08-28-Welcome.html" class="no-external">Important information on how to get started with this course. Please read this post carefully.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2024-08-28-Welcome.html" class="no-external">
-<div class="listing-date">
-Jun 29, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1202,4 +1152,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jbryer/DATA606-2025-Spring/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jbryer/DATA606-2025-Spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jbryer/DATA606-2025-Spring/edit/main/posts/2025-02-26-Waiting_to_pass_exam.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jbryer/DATA606-2025-Spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
