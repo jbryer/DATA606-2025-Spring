@@ -1,8 +1,8 @@
 ---
 title: "Distributions"
 subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
-author: Jason Bryer, Ph.D., Angela Lui, Ph.D., and George Hagstrom, Ph.D.
-date: "October 2, 2024"
+author: Jason Bryer, Ph.D.
+date: "February 26, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
@@ -251,7 +251,7 @@ My advise:
 
 
 ---
-# Standard Normal Parameters 
+# Normal Distribution Parameters 
 
 ```{r, echo=FALSE, fig.width=10, fig.height=4}
 par.orig <- par(mfrow=c(1,2), mar=c(2,1,1.5,1))
