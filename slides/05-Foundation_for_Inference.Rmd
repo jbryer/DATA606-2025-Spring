@@ -1,8 +1,8 @@
 ---
 title: "Foundation for Inference"
 subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
-author: Jason Bryer, Ph.D., Angela Lui, Ph.D., and George Hagstrom, Ph.D.
-date: "October 9, 2024"
+author: Jason Bryer, Ph.D.
+date: "March 5, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
@@ -40,9 +40,9 @@ class: center, middle, inverse, title-slide
 ---
 # Midterm
 
-* Available on October 16th
+* Available on March 12th.
 
-* Due October 20th (by midnight)
+* Due March 16th (by midnight).
 
 * Covers chapters 1 through 5.
 
