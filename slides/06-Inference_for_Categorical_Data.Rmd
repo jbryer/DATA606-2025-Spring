@@ -1,8 +1,8 @@
 ---
 title: "Inference for Categorical Data"
 subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
-author: Jason Bryer, Ph.D., Angela Lui, Ph.D., and George Hagstrom, Ph.D.
-date: "October 16, 2024"
+author: Jason Bryer, Ph.D.
+date: "March 12, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
@@ -64,9 +64,9 @@ ompWordCloud(omp$`What important question remains unanswered for you?`)
 ---
 # Announcements  `r hexes(c('infer','mice'))`
 
-The mid-term exam has been posted to Blackboard.
+The mid-term exam has been posted to Brightspace.
 
-* It is due October 20th by midnight.
+* It is due March 16th by midnight.
 * 20 multiple choice questions.
 * May use your book and notes. Do not consult with other students.
 * Good luck!

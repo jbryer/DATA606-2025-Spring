@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jason Bryer">
+<meta name="dcterms.date" content="2025-03-12">
+<meta name="description" content="Slides and recording for the Inference for Categorical Data meetup.">
 
-<title>DATA606 - Statistics and Probability – DATA 606 Spring 2025</title>
+<title>Inference for Categorical Data – DATA 606 Spring 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,9 +74,12 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../fullcalendar-lib/main.js"></script>
 
 
-<meta property="og:title" content="DATA606 - Statistics and Probability – DATA 606 Spring 2025">
-<meta property="og:description" content="DATA 606 - Statistics and Probability - CUNY School of Professional Studies">
+<meta property="og:title" content="Inference for Categorical Data – DATA 606 Spring 2025">
+<meta property="og:description" content="Slides and recording for the Inference for Categorical Data meetup.">
+<meta property="og:image" content="https://spring2025.data606.net/posts/2025-03-12-Inference_for_Categorical_Data.png">
 <meta property="og:site_name" content="DATA 606 Spring 2025">
+<meta property="og:image:height" content="720">
+<meta property="og:image:width" content="1280">
 </head>
 
 <body class="nav-sidebar docked fullcontent">
@@ -85,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">DATA606 - Statistics and Probability</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Inference for Categorical Data</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -319,14 +325,34 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">DATA606 - Statistics and Probability</h1>
-</div>
+<h1 class="title">Inference for Categorical Data</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Meetups</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Slides and recording for the <em>Inference for Categorical Data</em> meetup.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jason Bryer </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 12, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -336,163 +362,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Note: Schedule is subject to change. Last updated March 12, 2025 09:31PM.</em></p>
-<p><a href="https://sps.cuny.edu/academics/academic-calendar">CUNY SPS Academic Calendar</a></p>
-<script>
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialDate: '2025-03-12',
-      initialView: 'dayGridMonth',
-      headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
-      },
-      height: 'auto',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      selectable: true,
-      selectMirror: true,
-      nowIndicator: true,
-      events: [
-
-
-::: {.cell layout-align="center"}
-{ title: "Chapter 1 - Intro to Data, R, and RStudio",
-  url: "/chapters/chapter1/",
-  start: '2025-01-25',
-  end: '2025-02-03' },
- { title: "Chatper 2 - Summarizing Data",
-  url: "/chatpers/chapter2/",
-  start: '2025-02-03',
-  end: '2025-02-17' },
- { title: "Chapter 3 - Probability",
-  url: "/chapters/chapter3",
-  start: '2025-02-17',
-  end: '2025-02-24' },
- { title: "Chapter 4 - Distributions",
-  url: "/chapters/chapter4",
-  start: '2025-02-24',
-  end: '2025-03-03' },
- { title: "Chatper 5 - Foundation for Inference",
-  url: "/chapters/chapter5",
-  start: '2025-03-03',
-  end: '2025-03-10' },
- { title: "Chapter 6 - Inference for Categorical Data",
-  url: "/chapters/chapter6",
-  start: '2025-03-10',
-  end: '2025-03-17' },
- { title: "Chapter 7 - Inference for Numerical Data",
-  url: "/chapters/chapter7",
-  start: '2025-03-17',
-  end: '2025-03-24' },
- { title: "Chapter 8 - Linear Regression",
-  url: "/chapters/chapter8",
-  start: '2025-03-24',
-  end: '2025-04-07' },
- { title: "Chapter 9 - Logistic Regression",
-  url: "/chapters/chapter9",
-  start: '2025-04-07',
-  end: '2025-04-14' },
- { title: "Spring Recess",
-  start: '2025-04-14',
-  end: '2025-04-21' },
- { title: "Chapter 9 - Multiple Regression",
-  start: '2025-04-21',
-  end: '2025-04-28' },
- { title: "Intro to Bayesian Analysis",
-  url: "/chatpers/bayesian/",
-  start: '2025-04-28',
-  end: '2025-05-05' },
- { title: "Midterm",
-  url: "/assesssments/final/",
-  start: '2025-03-12',
-  end: '2025-03-17' },
- { title: "Final Exam",
-  url: "/assesssments/midterm/",
-  start: '2025-05-07',
-  end: '2025-05-12' },
- { title: 'Intro to the Course',
-  start: '2025-01-23T13:00:00',
-  end: '2025-01-23T13:00:00' },
- { title: 'Intro to Data',
-  url: "/chapters/chapter1.html",
-  start: '2025-01-29T20:00:00',
-  end: '2025-01-29T21:00:00' },
- { title: 'Summarizing Data Part 1',
-  url: "/chapters/chapter2.html",
-  start: '2025-02-05T20:00:00',
-  end: '2025-02-05T21:00:00' },
- { title: 'Summarizing Data Part 2',
-  url: "/chapters/chapter3.html",
-  start: '2025-02-12T20:00:00',
-  end: '2025-02-12T21:00:00' },
- { title: 'Building a portfolio with Github and Quarto',
-  start: '2025-02-19T18:30:00',
-  end: '2025-02-19T19:00:00' },
- { title: 'Probability',
-  url: "/chapters/chapter3.html",
-  start: '2025-02-19T20:00:00',
-  end: '2025-02-19T21:00:00' },
- { title: 'Distributions',
-  url: "/chapters/chapter4.html",
-  start: '2025-02-26T20:00:00',
-  end: '2025-02-26T21:00:00' },
- { title: 'Foundation for Inference',
-  url: "/chapters/chapter5.html",
-  start: '2025-03-05T20:00:00',
-  end: '2025-03-05T21:00:00' },
- { title: 'Inference for Categorical Data',
-  url: "/chapters/chapter6.html",
-  start: '2025-03-12T20:00:00',
-  end: '2025-03-12T21:00:00' },
- { title: 'Inference for Numerical Data',
-  url: "/chapters/chapter7.html",
-  start: '2025-03-19T20:00:00',
-  end: '2025-03-19T21:00:00' },
- { title: 'Linear Regression',
-  url: "/chapters/chapter8.html",
-  start: '2025-03-26T20:00:00',
-  end: '2025-03-26T21:00:00' },
- { title: 'Linear Regression Part 2',
-  url: "/chapters/chapter8.html",
-  start: '2025-04-02T20:00:00',
-  end: '2025-04-02T21:00:00' },
- { title: 'Maximum Likelihood Estimation',
-  url: "/chapters/chapter9.html",
-  start: '2025-04-09T20:00:00',
-  end: '2025-04-09T21:00:00' },
- { title: 'NO MEETUP: Spring Recess',
-  start: 'NA',
-  end: 'NA' },
- { title: 'Multiple Regression',
-  url: "/chapters/chapter9.html",
-  start: '2025-04-22T20:00:00',
-  end: '2025-04-22T21:00:00' },
- { title: 'Bayesian Analysis',
-  url: "/chapters/bayesian.html",
-  start: '2025-04-30T20:00:00',
-  end: '2025-04-30T21:00:00' },
- { title: 'Final Meetup',
-  start: '2025-05-07T20:00:00',
-  end: '2025-05-07T21:00:00' }
-:::
-
-
-      ]
-    });
-
-    calendar.render();
-  });
-
-</script>
-<div id="calendar">
-
-</div>
-<p><a href="../Course_Calendar.ics">Click here to import the course calendar into your calendar application</a></p>
+<p><a href="../slides/06-Infernce_for_Categorial_Data.html#1">Click here</a> to open the slides (<a href="../slides/06-Infernce_for_Categorial_Data.pdf">PDF</a>).</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AsTAHYMIXkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
 
 
 
@@ -1066,4 +938,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jbryer/DATA606-2025-Spring/edit/main/course/calendar.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jbryer/DATA606-2025-Spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jbryer/DATA606-2025-Spring/edit/main/posts/2025-03-12-Inference_for_Categorical_Data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jbryer/DATA606-2025-Spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
