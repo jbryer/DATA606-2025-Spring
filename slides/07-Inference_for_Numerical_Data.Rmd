@@ -1,8 +1,8 @@
 ---
 title: "Inference for Numerical Data"
 subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
-author: Jason Bryer, Ph.D., Angela Lui, Ph.D., and George Hagstrom, Ph.D.
-date: "October 23, 2024"
+author: Jason Bryer, Ph.D.
+date: "March 19, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
@@ -79,7 +79,7 @@ Due April 1<sup>st</sup>ish Select a dataset that interests you. For the proposa
 * Relevant summary statistics
 ]
 
-More information including template and suggested datasets located here: https://spring2024.data606.net/assignments/project/
+More information including template and suggested datasets located here: https://spring2025.data606.net/assignments/project/
 
 
 
@@ -828,10 +828,9 @@ The plots were created using the `VisualStats::anova_vis()` function.
 Shiny app:
 
 ```{r, eval=FALSE}
-remotes::install_github('jbryer/VisualStats')
+# remotes::install_github('jbryer/VisualStats')
 library(VisualStats)
-library(ShinyDemo)
-shiny_demo('anova', package = 'VisualStats')
+VisualStats::anova_shiny()
 ```
 
 
