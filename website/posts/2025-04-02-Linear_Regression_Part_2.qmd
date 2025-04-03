@@ -1,0 +1,17 @@
+---
+title: "Linear Regression Part 2"
+author: "Jason Bryer"
+date: 2025-04-02
+draft: false
+description: "Slides and recording for the *Linear Regression Part 2* meetup."
+categories: ["Meetups"]
+image: "2025-04-02-Linear_Regression_Part_2.png"
+---
+
+
+[Click here](/slides/08-Linear_Regression2.html#1) to open the slides ([PDF](/slides/08-Linear_Regression2.pdf)).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oB7mahqoLy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+

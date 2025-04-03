@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2025-04-02-Linear_Regression_Part_2.html",
       "/posts/2025-03-26-Linear_Regression.html",
       "/posts/2025-03-19-Inference_for_Numerical_Data.html",
       "/posts/2025-03-12-Inference_for_Categorical_Data.html",
