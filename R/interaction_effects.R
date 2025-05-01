@@ -144,7 +144,7 @@ multiple_regression_vis(
 )
 
 data("poverty", package = "VisualStats")
-GGally::ggpairs(poverty[,-1])
+GGally::ggpairs(poverty[,c('poverty', 'white', 'female_house')])
 multiple_regression_vis(
 	y = poverty$poverty,
 	x1 = poverty$white,
@@ -154,7 +154,17 @@ multiple_regression_vis(
 	x2_lab = 'Percent Female Head of Household',
 	interaction = FALSE
 )
+lm(poverty ~ white, data = poverty) |> summary()
+lm(poverty ~ female_house, data = poverty) |> summary()
+lm(poverty ~ female_house + white, data = poverty) |> summary()
 
+var(poverty$poverty)
+sqrt(var(poverty$poverty))
+sd(poverty$poverty)
+
+sum((poverty$poverty - mean(poverty$poverty))^2 / (nrow(poverty) - 1))
+
+sum((poverty$poverty - mean(poverty$poverty))^2)
 
 ##### Using GLM approach
 residual_sum_squares <- function(parameters, predictors, outcome) {
@@ -187,6 +197,21 @@ residual_sum_squares(parameters = c(0.58300, -0.21048, 5.73635),
 optim.rss$par
 
 optim.rss$iterations_df |> head()
+
+data(mtcars)
+lm(mpg ~ wt, data = mtcars) |> summary()
+lm(mpg ~ vs, data = mtcars) |> summary()
+lm(mpg ~ wt + vs, data = mtcars) |> summary()
+cor.test(mtcars$wt, mtcars$vs)
+
+optim.rss <- optim_save(
+	par = runif(3),
+	fn = residual_sum_squares,
+	# method = "L-BFGS-B",
+	predictors = mtcars[,c('wt', 'vs')],
+	outcome = mtcars$mpg
+)
+optim.rss$par
 
 # scatterplot3d::scatterplot3d(
 # 	x = depression$anxiety,
@@ -225,3 +250,21 @@ optim.rss$iterations_df |> head()
 # 	main = "",
 # 	plot = T
 # )
+
+matrix(c(10, 3, 3, 3, 5, 0, 3, 0, 15), 3, 3)
+
+library(MASS)
+?mvrnorm
+df <- mvrnorm(
+	n = 100,
+	mu = c(0, 0, 0),
+	Sigma = matrix(c(10, 3, 3, 3, 5, 0, 3, 0, 5), 3, 3)
+) |> as.data.frame()
+head(df)
+lm(V1 ~ V2 + V3, data = df) |> summary()
+cor(df)
+cor.test(df$V2, df$V3)
+
+lm(V1 ~ V2, data = df)
+lm(V1 ~ V3, data = df)
+lm(V1 ~ V2 + V3, data = df)
