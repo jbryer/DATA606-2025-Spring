@@ -1,7 +1,7 @@
 ---
 title: "DATA 606 Presentations"
 subtitle: "Statistics & Probability for Data Analytics"
-date: "Fall 2024"
+date: "Spring 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
@@ -24,6 +24,7 @@ editor_options:
 
 ```{r setup, include = FALSE}
 source('../config.R')
+peer_feedback_form <- 'https://forms.gle/EKMWE2UE8WBip5Wj6'
 ```
 
 class: center, middle, inverse, title-slide
@@ -47,16 +48,21 @@ kable(rubric)
 class: font100
 # Directions
 
+.pull-left[
 * You have no more than 10 minutes.
 
 * If your abstract is in your slide deck, please don't read it.
 
-* We will record the session for our records but will not post the recording.
-
-* Complete the peer feedback form for each presentations: https://forms.gle/5twhtAUwdBgzdJA19
-
-* You will receive your feedback from us and peers (anonymized) after all the presentations have been done.
+* Complete the peer feedback form for each presentations: `r peer_feedback_form`
 
 * Submit a PDF of your slides and abstract to Brightspace.
 
 * Good luck!
+]
+.pull-right[
+
+```{r, echo=FALSE, fig.width=5, fig.height=5}
+qrcode::qr_code(peer_feedback_form) |> plot(col = c('#FAFAFA', 'black'))
+```
+
+]

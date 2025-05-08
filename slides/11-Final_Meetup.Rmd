@@ -1,8 +1,8 @@
 ---
 title: "Final Meetup"
 subtitle: "DATA 606 - Statistics & Probability for Data Analytics"
-author: Jason Bryer, Ph.D., Angela Lui, Ph.D., and George Hagstrom, Ph.D.
-date: "December 11, 2024"
+author: Jason Bryer, Ph.D.
+date: "May 7, 2025"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
@@ -46,7 +46,7 @@ class: center, middle, inverse, title-slide
 
 * Is now available on Brightspace.
 
-* Due by midnight December 15th.
+* Due by midnight May 11th.
 
 * You may use your book and course materials.
 
@@ -59,7 +59,18 @@ class: center, middle, inverse, title-slide
 * Put your answers in the Rmarkdown file and submit the PDF file. **Please do not post your answers online!**
 
 ---
-# Jason's Work `r hexes('psa')`
+# Announcements
+
+* You should join the New York Open Statistical Programming Meetup group. [https://nyhackr.org](https://nyhackr.org)
+  * They meet monthly, usually at NYU. [George Hagstrom](mailto:George.Hagstrom@cuny.edu) has been organizing a group of MSDS students meeting up there each month.
+  * Their annual conference will be August 26th and 27th: [https://nyhackr.org/events.html](https://nyhackr.org/events.html)
+
+* The Joint Statistical Meeting will be August 2nd to 7th in Nashville: [https://ww2.amstat.org/meetings/jsm/2025/](https://ww2.amstat.org/meetings/jsm/2025/)
+
+* useR! will be virtual August 1st and in person (Duke University) August 8th to 10th: [https://user2025.r-project.org](https://user2025.r-project.org)
+
+---
+# Propensity Score Analysis `r hexes('psa')`
 
 My statistical research interest is in propensity score methods. Propensity score analysis (PSA) is a quasi-experimental design used to estimate causality from observational studies.
 
@@ -84,19 +95,20 @@ Here are some resources for PSA:
 
 
 ---
-# Jason's Work (cont.)
+# R Packages
 
 Here is list of some other R related projects I have worked on:
 
-<img src='images/hex/likert.png' height='75' align='center'> [`likert`](https://github.com/jbryer/likert) - Analysis and Visualization of Likert Based Items  
-<img src='images/hex/ShinyQDA.png' height='75' align='center'> [`ShinyQDA`](https://github.com/jbryer/ShinyQDA) - R Package and Shiny Application for the Analysis of Qualitative Data  
-<img src='images/hex/clav.png' height='75' align='center'> [`clav`](https://github.com/jbryer/clav) - Cluster Analysis Validation  
-<img src='images/hex/IRRsim.png' height='75' align='center'> [`IRRsim`](https://github.com/jbryer/IRRsim) - An R Package for Simulating Inter-Rater Reliability  
-<img src='images/hex/mldash.png' height='75' align='center'> [`mldash`](https://github.com/jbryer/mldash) - Machine Learning Dashboard  
-<img src='images/hex/FutureMapping.png' height='75' align='center'> [AmplifyApp](https://amplifyapp.org/en), [dashboard](https://amplifyapp.org/en), and [Future Mapping NYC](https://futuremapping.org)
+<img src='images/hex/likert.png' height='70' align='center'> [`likert`](https://github.com/jbryer/likert) - Analysis and Visualization of Likert Based Items  
+<img src='images/hex/ShinyQDA.png' height='70' align='center'> [`ShinyQDA`](https://github.com/jbryer/ShinyQDA) - R Package and Shiny Application for the Analysis of Qualitative Data  
+<img src='images/hex/medley.png' height='70' align='center'> [`medley`](https://github.com/jbryer/medley) - Predictive modeling with missing data  
+<img src='images/hex/clav.png' height='70' align='center'> [`clav`](https://github.com/jbryer/clav) - Cluster Analysis Validation  
+<img src='images/hex/IRRsim.png' height='70' align='center'> [`IRRsim`](https://github.com/jbryer/IRRsim) - An R Package for Simulating Inter-Rater Reliability  
+<img src='images/hex/mldash.png' height='70' align='center'> [`mldash`](https://github.com/jbryer/mldash) - Machine Learning Dashboard  
+<img src='images/hex/FutureMapping.png' height='70' align='center'> [AmplifyApp](https://amplifyapp.org/en), [dashboard](https://amplifyapp.org/en), and [Future Mapping NYC](https://futuremapping.org)
 
 ---
-# DAACS (Jason and Angela)
+# DAACS
 
 [The Diagnostic Assessment and Achievement of College Skills](https://daacs.net) (DAACS) is a suite of technological and social supports to optimize student learning. DAACS  provides personalized feedback about students’ strengths and weaknesses in  terms of key academic and self-regulated learning skills, linking them to the resources to help them be successful students. This is currently supported by a five-year $3.8 million grant received in 2021 from the Institute of Education Sciences to test the efficacy at three institutions.
 
@@ -109,106 +121,17 @@ Applications of Data Science:
 
 
 
-
----
-# Angela's Work: Students’ responses to feedback
-
-.center[
-```{r, echo=FALSE, out.width=800}
-knitr::include_graphics('images/Lui_dissertation.jpg')
-```
-]
-
----
-# Exploring Responses to Feedback in DAACS
-
-**Some Research Questions**
-
-1. What are the sentiments conveyed in students’ essays?
-2. What judgments about SRL feedback emerge in students’ essays?
-3. What meanings do students make of the SRL feedback? (a focus on the content criterion?)
-4. What attributions do students make if any?
-5. To what strategies do students tend to commit? 
-6. Are these (above five bullets) related to 1) the number of dots they received per domain? 2) the number of feedback pages they viewed? 3) the level of feedback specificity they viewed?
-
-**Data Sources**
-
-* Students’ essays on the DAACS Writing Assessment
-* Students’ SRL Assessment Results and Feedback
-
-**Analyses**
-
-* Sentiment Analysis
-* Content Analysis
-
----
-# George: Data and Models in Biogeochemistry 
-
-.pull-left[
-
-- Metagenomes/Systems Bio
-
-- Ecology and Traits
-
-- Physical Oceanography
-
-- Bayesian Inference
-
-- Understand the response to environmental drivers like climate change
-
-]
-.pull-right[
-
-![](images/ResearchSlideBiogeochemistry.png)
-
-]
-
----
-# Critical Transitions
-
-
-- Revolutions, Economic Booms/Busts, Tech Adoption, Desertification
-
-- Statistical Phyics. for indicators of change
-
-- Combine theory and data from Social/Economic Systems
-
-![](images/ResearchSlideCriticalTransitions.png)
-
-
----
-# Other Areas
-
-- Past: collective behavior, plasma physics, geophysical fluid dynamics, and numerical analysis.
-
-- Happy to help you with any ideas even tangentially related to these areas
-
-- Future interest: Random Numerical Methods eg Hamiltonian MCMC methods, random linear algebra
-
-
-
 ---
 # Thank You
 
 This has been a great semester. Please don't hesitate to reach out:
 
-.pull-left[
 `r fa('envelope')` Email: [jason.bryer@cuny.edu](mailto:jason.bryer@cuny.edu)
 `r fa('github')` Github: https://github.com/jbryer
 `r fa('link')` Personal Website: https://bryer.org
 `r fa('linkedin')` LinkedIn: [jasonbryer](https://www.linkedin.com/in/jasonbryer/)
 `r fa('mastodon')` Mastodon: [@jbryer@vis.social](https://vis.social/@jbryer)
 
-]
-.pull-right[
-`r fa('envelope')` Email: [angela.lui@cuny.edu](mailto:angela.lui@cuny.edu)
-`r fa('linkedin')` LinkedIn: [angela-m-lui-8b051928](https://www.linkedin.com/in/angela-m-lui-8b051928/)
-
-<hr />
-
-`r fa('envelope')` Email: [george.hagstrom@cuny.edu](mailto:george.hagstrom@cuny.edu)
-`r fa('linkedin')` LinkedIn: [george-hagstrom-846b1b13](https://www.linkedin.com/in/george-hagstrom-846b1b13/)
-]
 
 <br/>
 
